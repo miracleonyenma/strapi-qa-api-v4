@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_infos",
+  "info": {
+    "singularName": "student-info",
+    "pluralName": "student-infos",
+    "displayName": "studentInfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bio": {
+      "type": "text"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::student.student",
+      "inversedBy": "student_info"
+    }
+  }
+}
